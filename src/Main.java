@@ -32,10 +32,12 @@ public class Main {
                     StudentManager.sortStudentsByGpa();
                     break;
                 case 5:
-                    StudentManager.sortStudentsByGpa();
+                    StudentManager.bubbleSortByGpaAscending();
                     break;
                 case 6:
-                    StudentManager.bubbleSortByGpaAscending();
+                    Scanner input4 = new Scanner(System.in);
+                    name = input4.nextLine();
+                    StudentManager.updateStudentInfo(name);
                     break;
                 case 7:
                     Scanner input3 = new Scanner(System.in);
@@ -47,7 +49,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("--------------------------------------------");
-                    System.out.println("Đéo được nha , chỉ được chọn từ 1 đến 5  ! ");
+                    System.out.println("Đéo được nha , chỉ được chọn từ 1 đến 8 ! ");
                     System.out.println("--------------------------------------------");
             }
         }
