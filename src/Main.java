@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
         boolean continueLoop = true;
         while (continueLoop) {
-            System.out.println("1.Thêm sinh viên");
-            System.out.println("2.In danh sách sinh viên");
-            System.out.println("3.Tìm kiếm sinh viên theo tên : ");
-            System.out.println("4.In danh sách sinh viên theo điểm (cao nhat) ");
-            System.out.println("5.In danh sách sinh viên theo điểm (thap nhat)");
-            System.out.println("6.Cập nhật thông tin sinh viên ");
-            System.out.println("7.Xóa sinh viên theo tên");
-            System.out.println("8.Thoát");
+            System.out.println("1.Add Student");
+            System.out.println("2.Print All Students");
+            System.out.println("3.Find Student by Name : ");
+            System.out.println("4.Print All Students by GPA(highest) : ");
+            System.out.println("5.Print All Students by GPA(highest) (lowest)");
+            System.out.println("6.Update Student Infor ");
+            System.out.println("7.Delete Student by Name : ");
+            System.out.println("8.Exit Program");
 
             int choice;
             choice = Validated.valiDated();
@@ -49,7 +49,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("--------------------------------------------");
-                    System.out.println("Đéo được nha , chỉ được chọn từ 1 đến 8 ! ");
+                    System.out.println("No , just 1 to 8! ");
                     System.out.println("--------------------------------------------");
             }
         }
